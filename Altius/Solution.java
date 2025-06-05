@@ -7,7 +7,7 @@ public class Solution {
         int dp[] = new int[nums.length];
         int n = nums.length;
         for (int j = 0; j < n; j++) {
-            dp[i] = java.util.arrays.binarySearch(dp, 0, len, nums);
+            int i= java.util.Arrays.binarySearch(dp, 0, len, j);
             if (i < 0) {
                 i = -(i + 1);
             }
